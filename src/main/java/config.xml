@@ -8,23 +8,11 @@
     http://www.springframework.org/schema/context/spring-context.xsd">    
     
    <!--  this is our beans -->    
-    <bean class="com.spring.Student" name="student1">
-    	<property name="studentId" value= "22344"/>
+    <bean class="com.spring.Student" name="student1" p:studentId ="111" p:studentName="Raushan Ranjan" p:studentAddress="Chennai" />
     	
-    	<property name="studentName" value= "Raushan Ranjan" />
-    	
-    	<property name="studentAddress" value= "chennai" />
-    
-    </bean>
     
     <!--  this is our 2nd beans -->    
-    <bean class="com.spring.Student" name="student2">
-    	<property name="studentId" value= "102"/>
+    <bean class="com.spring.Student" name="student2" p:studentId ="222" p:studentName="Ravi Ranjan" p:studentAddress="Patna" />
     	
-    	<property name="studentName" value= "Ravi Ranjan" />
-    	
-    	<property name="studentAddress" value= "Patna" />
-    
-    </bean>
 
 </beans>
