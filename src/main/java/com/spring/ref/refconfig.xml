@@ -12,17 +12,15 @@
   </bean>
   
   
-  <bean class="com.spring.ref.A" name="aref">
-  <property name="x" value="90" />
-  
-  <!-- 
+  <bean class="com.spring.ref.A" name="aref" p:x="74" p:ob-ref="bref"/>
+  <!-- <property name="x" value="90" />
   <property name="ob">
   <ref bean="bref"/>
   </property>
-   -->
- <property name="ob" ref= "bref" />
    
+ <property name="ob" ref= "bref" />
   </bean>
+   -->
   
   
 </beans>
