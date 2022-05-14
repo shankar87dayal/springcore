@@ -3,6 +3,7 @@ package com.spring.ci;
 public class Certi {
 
 	 String name;
+	 
 
 	public Certi(String name) {
 		super();
