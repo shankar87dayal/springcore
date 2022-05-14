@@ -19,7 +19,8 @@
   
  
     
-<bean class= "com.spring.ci.Person" name="person" c:name="Raushan" c:personId="98" c:certi-ref="cer" >
+<bean class= "com.spring.ci.Person" name="person" c:name="Raushan" c:personId="98" c:certi-ref="cer" /> 
+
 <!-- 
 <bean class= "com.spring.ci.Person" name="person">
 <constructor-arg value= "Raushan" />
@@ -27,6 +28,9 @@
 <constructor-arg ref="cer" />
 
 </bean>    	
--->
-</bean>
+
+ -->
+
+
+
 </beans>
