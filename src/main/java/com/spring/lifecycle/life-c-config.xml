@@ -5,7 +5,10 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
-    http://www.springframework.org/schema/context/spring-context.xsd">    
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:annotation-config /> <!-- this line is used for all annotation file -->
+        
  <!-- same method name init and destroy -->  
  <!-- 
 <bean class="com.spring.lifecycle.Samosa" name="s1" 
@@ -14,6 +17,7 @@ init-method="init" destroy-method= "destroy">
 </bean>    	
 -->
 <!-- different  method name init and destroy -->
+<!-- 
 <bean class="com.spring.lifecycle.Samosa" name="s1" 
 init-method="hey" destroy-method= "bye">
 <property name="price" value="10" />
@@ -22,5 +26,11 @@ init-method="hey" destroy-method= "bye">
 <bean class="com.spring.lifecycle.Pepsi" name="p1">
 <property name="price" value="55" />
 </bean>
- 	
+ -->
+ 
+ <bean class="com.spring.lifecycle.Example" name="example">
+<property name="subject" value="java" />
+</bean>	
+<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" /> <!-- this line is used 
+for only @PostConstruct and @PreDestroy  Annotation -->
 </beans>
