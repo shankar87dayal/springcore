@@ -14,6 +14,10 @@
 <property name="city" value="chennai" />
 </bean>
 
+<bean class="com.spring.auto.wire.annotation.Address" name="address1">
+<property name="street" value="Harlakhi" />
+<property name="city" value="madhubani" />
+</bean>
 
 
 <!-- <bean class="com.spring.auto.wire.annotation.Emp" name="emp1" autowire="byName" /> -->
