@@ -3,9 +3,11 @@ package com.spring.bean.scope;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component("obj")
+@Scope("prototype")
 public class Student {
 
 	@Value ("Raushan Ranjan")
@@ -38,7 +40,6 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [studentName=" + studentName + ", city=" + city + "]";
+		
 	}
-	
-	
 }
