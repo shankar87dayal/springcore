@@ -12,5 +12,7 @@ public class Test {
 		
 		Student student = con.getBean("obj", Student.class);
 		System.out.println(student);
+		System.out.println(student.getAddress());
+		System.out.println(student.getAddress().getClass().getName());
 	}
 }
