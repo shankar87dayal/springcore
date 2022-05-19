@@ -17,7 +17,7 @@ public class Test {
 		
 		System.out.println(d1);
 		
-		         SpelExpressionParser temp = new SpelExpressionParser();
+		         SpelExpressionParser temp = new SpelExpressionParser();     
 		         Expression expression = temp.parseExpression("22 + 20");
 		         System.out.println(expression.getValue());
 
