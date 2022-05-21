@@ -20,6 +20,9 @@ public class Demo {
 	@Value("#{new java.lang.String('Raushan')}")
 	private String name;
 	
+	@Value("#{ 8-4>3}")
+	private boolean isActive;
+	
 	public int getX() {
 		return x;
 	}
@@ -47,8 +50,10 @@ public class Demo {
 	}
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", e=" + e + ", name=" + name + "]";
+		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", e=" + e + ", name=" + name + ", isActive=" + isActive
+				+ "]";
 	}
+
 	
 	
 }
